@@ -1,0 +1,53 @@
+<canvas width="600" height="400"> </canvas>
+
+<script>
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");    
+    pincel.fillStyle = "Cyan";
+    pincel.fillRect(0,0,600,400); 
+    pincel.strokeStyle="black";
+    pincel.strokeRect(0,0,600,400)
+    
+
+   function cir(x,y,radio,color){
+        pincel.fillStyle=color;
+        pincel.beginPath();
+        pincel.strokeStyle="black";
+    pincel.strokeRect(0,0,600,400)
+        pincel.arc(x,y,radio,0,2*Math.PI)
+        pincel.fill();
+   }
+
+   function limpiarPantalla(){
+    pincel.clearRect(0,0,600,400)
+   }
+
+   var x;
+   var y;
+   var aux=true;
+   var radio=10;
+   function actualizar(){
+        limpiarPantalla();
+        x=Math.random()*600;
+        y=Math.random()*400;
+        cir(x,y,radio+20,"red");
+        cir(x,y,radio+10,"lightgrey");
+        cir(x,y,radio,"red");
+                  }
+                                              
+    setInterval(actualizar,1500) ; 
+
+    function para (evento){
+        var posx= evento.pageX-pantalla.offsetLeft;
+        var posy = evento.pageY - pantalla.offsetTop;
+
+        if( (posx<x+radio) &&
+            (posx>x-radio) &&
+            (posy<y+radio) &&
+            (posy>y-radio) ) 
+        alert("Le diste capo");
+    }
+    
+    pantalla.onclick=para;
+      
+</script> 

@@ -1,0 +1,146 @@
+*{   
+    font-weight:400;
+    font-size:32px;
+    line-height : 150%;
+    margin: 0;
+}
+header{
+    height: 100px; 
+    display: flex;
+    align-items: center;   
+}
+    header img{
+        width: 100px;
+    }
+.border{
+    border-radius: 20px;
+    border-color: black;
+    border-width: 5;
+    border-style: solid;
+}
+body{
+    height: 800px;
+    background: linear-gradient( white ,rgb(1, 1, 112)
+    );
+}
+    main{
+        
+        width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+.input-texto{
+    margin-top: 90px;
+    
+}
+.mensaje{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 90px;
+    background-image: url(imagenes/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position: 18px;
+    background-size: 300px;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.copiar{
+    margin-left: 200px;
+}
+.encriptar{
+    background-color: rgb(60, 68, 177);
+    color: white;
+}
+.desencriptar{
+    margin-left: 30px;
+}
+.informacion{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*   ##  border  ##   
+
+header{
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header img{
+    width: 15%;
+    height: 100px;
+}
+nav{
+    width: 70%;
+}
+header li{
+    display: inline-block;
+    margin: 5px;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+}
+/*   ##  main  ##   
+#principal{
+    background:linear-gradient(rgb(209, 180, 197),rgb(182, 36, 116));
+    height:800px;
+    padding-top: 25px;
+    border-top:solid rgb(121, 34, 86) 5px;
+}
+main {
+    width: 80%;
+    margin: 15px auto;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+    #salida,#entrada{
+        width: 45%;
+        height: 550px;
+    }
+    #salida{
+        width: 35%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+        .input-texto{
+            width: 100%;
+            margin: 75px 0;
+            height: 300px;
+        }
+        #mensaje{
+            width: 100%;
+            height: 450px;   
+        }
+        #botones{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            position:relative;
+            top: 38px;
+        }
+        button{
+            padding: 20px 40px;
+        }
+
+ */
